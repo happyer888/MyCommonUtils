@@ -1,5 +1,8 @@
-# Guide for instruction (使用指南)
+# How to Use?
 
-* Copy *.java file into your package folder, like "utils", call the method in your code anywhere you needed.
+* Copy .java file into Moudle's package folder, such as "utils", call the method while needed.
 
-* 拷贝对应的`.java`文件到项目包下,如"utils"包名下,然后在需要处调用方法即可.
+* 将`.java`文件拷贝到项目包下,例如"utils"
+
+* "类名.方法名"进行使用.
+

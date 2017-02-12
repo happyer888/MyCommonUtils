@@ -1,2 +1,2 @@
 # MyCommonUtils
-All common util tools will be used for Android development.
+A collection of common utils tools for Android development.
