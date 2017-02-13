@@ -1,4 +1,4 @@
-
+package com.keithly.demo.testdemo.utils;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -7,9 +7,7 @@ public class ToastUtils {
     private static Toast sToast;
 
     /**
-     * Shows a short toast message while be called.
-     * @param context Context
-     * @param msg     Message
+     * Shows a toast message while be called.
      */
     public static void showToast(Context context, String msg) {
         if (sToast == null) {
@@ -20,9 +18,7 @@ public class ToastUtils {
     }
 
     /**
-     * Shows a long toast message while be called.
-     * @param context Context
-     * @param msg     Message
+     * Shows a toast message for a long time while be called.
      */
     public static void showLongToast(Context context, String msg) {
         if (sToast == null) {
