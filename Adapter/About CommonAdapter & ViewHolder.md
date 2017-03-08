@@ -7,6 +7,6 @@
 
 # 使用方法
 
-* 1.导入CommonAdapter.java和ViewHolder.java到对应报名下.
-* 2.在项目中,新建一个类继承CommonAdpter,创建构造器,重写抽象方法.
+* 1.导入CommonAdapter.java和ViewHolder.java到对应的包中.
+* 2.在项目中,新建一个adapter类继承CommonAdpter,创建构造器,重写抽象方法.
 * 3.初始化ViewHolder,绑定数据,进行复用即可.

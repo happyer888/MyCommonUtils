@@ -1,3 +1,5 @@
+package com.framework.ui.keithly.uiframework.utils;
+
 import android.text.TextUtils;
 
 import com.google.gson.Gson;
@@ -14,6 +16,11 @@ import java.util.Map;
 /**
  * 通过Gson解析Json数据工具类
  * 注:使用需要添加Gson依赖库!
+ * 包括:
+ * 1.Map互转Json
+ * 2.Json转JavaBean
+ * 3.Json转List
+ * 4.获取Json中字段Value值
  */
 public class GsonUtils {
 
@@ -86,7 +93,7 @@ public class GsonUtils {
 
     /**
      * 获取Json字符串中某个字段(Key)的值(Value)
-     * 注意，只能获取同一层级的value!
+     * !注意，只能获取同一层级的value!
      *
      * @param json 传入Json数据
      * @param key  传入Key字段

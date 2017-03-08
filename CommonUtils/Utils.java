@@ -1,93 +1,65 @@
-import android.content.res.Resources;
-import android.graphics.Color;
+package com.framework.ui.keithly.uiframework.utils;
 
-import java.util.Random;
+import android.content.res.Resources;
+
+import com.framework.ui.keithly.uiframework.global.AppApplication;
 
 /**
- * 常用功能工具类
- * 使用方法:新建MyApplication.java类,内容如下:
-    public class MyApplication extends Application {
-        public static Handler sMainHandler;
-        public static Context context;
-        @Override
-        public void onCreate() {
-            super.onCreate();
-            sMainHandler = new Handler();
-            context = this;
-        }
-    }
+ * 常用的通用工具类
+ * 包括:
+ * 1.主线程更新UI
+ * 2.获取资源管理类
+ * 3.代码中获取dip值
+ * 4.代码汇中获取颜色值
+ * 5.解析xml中字符串数组属性
  */
 public class Utils {
     /**
-     * 主线程更新UI,适配没有上下文的环境
+     * 在没有上下文的环境下,实现主线程中更新UI界面
      *
-     * @param runnable Runnable
+     * @param runnable Runnable对象
      */
     public static void runOnUIThread(Runnable runnable) {
-        MyApplication.sMainHandler.post(runnable);
+        AppApplication.mainHandler.post(runnable);
     }
 
     /**
-     * 获取字符串数组信息
+     * 获取资源管理的类
      *
-     * @param resId 资源的ID
-     * @return 返回字符串数组
-     */
-    public static String[] getStringArray(int resId) {
-        return getResources().getStringArray(resId);
-    }
-
-    /**
-     * 获取资源管理类
-     *
-     * @return Resources
+     * @return 返回Resources对象
      */
     public static Resources getResources() {
-        return MyApplication.context.getResources();
+        return AppApplication.context.getResources();
     }
 
     /**
-     * 屏幕适配中实现px转dp的方法
+     * 屏幕适配时,实现代码中使用dip属性值
      *
-     * @param resId 资源的ID
-     * @return int
+     * @param resId 传入资源ID
+     * @return 返回Int类型dip值
      */
     public static int getDimens(int resId) {
         return getResources().getDimensionPixelSize(resId);
     }
 
     /**
-     * 获取所需资源的颜色值信息
+     * 获取颜色值
      *
-     * @param resId 资源的ID
-     * @return 返回指定资源ID的颜色值
+     * @param resId 传入资源ID
+     * @return 返回Int颜色值
      */
     public static int getColor(int resId) {
         return getResources().getColor(resId);
     }
 
     /**
-     * 随机生成单一一种颜色
-     * 颜色值范围[0,180]
+     * 获取字符串数组的信息
+     * 用于解析arrays.xml中<string-array></string-array>信息
      *
-     * @return 单一颜色值
+     * @param resId 传入资源ID
+     * @return 返回String数组
      */
-    public static int createRandomColor() {
-        Random random = new Random();
-        return random.nextInt(180);
-    }
-
-    /**
-     * 随机生成一组RGB混合颜色
-     *
-     * @return RGB混合色彩值
-     */
-    // 创建一个随机的颜色
-    public static int randomColor() {
-        Random random = new Random();
-        int red = random.nextInt(180);
-        int blue = random.nextInt(180);
-        int green = random.nextInt(180);
-        return Color.rgb(red, green, blue);
+    public static String[] getStringArray(int resId) {
+        return getResources().getStringArray(resId);
     }
 }
