@@ -1,11 +1,10 @@
-package com.framework.ui.keithly.uiframework.utils;
-
 import android.content.res.Resources;
 
 import com.framework.ui.keithly.uiframework.global.AppApplication;
 
 /**
  * 常用的通用工具类
+ * 
  * 包括:
  * 1.主线程更新UI
  * 2.获取资源管理类

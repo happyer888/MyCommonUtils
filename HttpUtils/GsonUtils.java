@@ -15,7 +15,9 @@ import java.util.Map;
 
 /**
  * 通过Gson解析Json数据工具类
+ * 
  * 注:使用需要添加Gson依赖库!
+ * 
  * 包括:
  * 1.Map互转Json
  * 2.Json转JavaBean

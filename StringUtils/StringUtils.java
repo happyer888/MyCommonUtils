@@ -1,5 +1,3 @@
-package com.framework.ui.keithly.uiframework.utils;
-
 import android.text.TextUtils;
 
 import java.io.BufferedReader;
@@ -14,6 +12,7 @@ import java.util.regex.Pattern;
 
 /**
  * 字符串操作工具类
+ * 
  * 包括:
  * 1.字符串转日期
  * 2.日期转字符串

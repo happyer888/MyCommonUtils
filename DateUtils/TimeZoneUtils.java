@@ -1,10 +1,12 @@
-package com.framework.ui.keithly.uiframework.utils;
-
 import java.util.Date;
 import java.util.TimeZone;
 
 /**
  * 时区判断转换工具类
+ * 
+ * 包括:
+ * 1.判断是否为东八区
+ * 2.根据时区转换日期
  */
 public class TimeZoneUtils {
 

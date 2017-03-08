@@ -1,5 +1,3 @@
-package com.framework.ui.keithly.uiframework.utils;
-
 import android.content.Context;
 import android.widget.Toast;
 
@@ -7,6 +5,7 @@ import com.framework.ui.keithly.uiframework.global.AppApplication;
 
 /**
  * Toast工具类
+ * 
  * 包括:
  * 1.一个参数,主线程弹吐司
  * 2.两个参数,通用弹吐司
